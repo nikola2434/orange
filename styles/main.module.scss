@@ -1,0 +1,9 @@
+@mixin get-text($font-size) {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: $font-size;
+}
+
+$yellow: #fac600;
+$orange: #ff8d00;

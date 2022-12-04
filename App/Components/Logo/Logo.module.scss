@@ -1,13 +1,16 @@
+@import "../../../styles/main.module.scss";
 .logo {
   display: flex;
   max-width: 200px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 5px;
   .title {
-    @extend %get-text;
+    @include get-text(32px);
     background: linear-gradient(91.23deg, #ff8d00 33.93%, #fac600 82.04%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+
   }
 }

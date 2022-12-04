@@ -1,0 +1,7 @@
+@import "../../../../styles/main.module.scss";
+
+.item {
+  @include get-text(24px);
+  position: relative;
+  
+}

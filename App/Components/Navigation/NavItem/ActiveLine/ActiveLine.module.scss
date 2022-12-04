@@ -1,0 +1,14 @@
+@import "../../../../../styles/main.module.scss";
+.active_line {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .line {
+    position: absolute;
+    width: calc(100% - 15px);
+    height: 5px;
+    margin-top: 6px;
+    border-radius: 100px;
+    background: $orange;
+  }
+}

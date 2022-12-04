@@ -1,10 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap");
-
-%get-text {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
 html,
 body {

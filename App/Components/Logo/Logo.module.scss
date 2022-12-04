@@ -1,0 +1,13 @@
+.logo {
+  display: flex;
+  max-width: 200px;
+  justify-content: center;
+  align-items: center;
+  .title {
+    @extend %get-text;
+    background: linear-gradient(91.23deg, #ff8d00 33.93%, #fac600 82.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

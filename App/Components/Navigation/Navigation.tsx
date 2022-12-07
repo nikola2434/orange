@@ -17,7 +17,7 @@ export const Navigation: FC = () => {
             ))}
           </AnimateSharedLayout>
         </div>
-        <NavItem key="auth" link="auth" title="Войти" />
+        <NavItem key="auth" link="auth/login" title="Войти" />
       </div>
     </div>
   );

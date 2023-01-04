@@ -1,0 +1,45 @@
+@import "../../../styles/main.module.scss";
+.field {
+  display: block;
+  position: relative;
+
+  .placeholder {
+    color: $orange;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    transition: all 0.2s linear;
+    z-index: -1;
+  }
+  > input {
+    display: block;
+    width: 350px;
+    height: 55px;
+    background-color: transparent;
+    padding: 10px;
+    @include get-text(18px);
+    color: $orange;
+    border: none;
+    border-bottom: 2px $yellow solid;
+    outline: none;
+    margin-bottom: 30px;
+    transition: all 0.2s linear;
+    &:focus {
+      border-bottom: 2px $orange solid;
+    }
+    &:focus + span,
+    &:valid + span {
+      transform: translate(-20px, -35px);
+    }
+  }
+
+  .error {
+    color: red;
+    position: absolute;
+    @include get-text(16px);
+    bottom: -24px;
+    left: 10px;
+  }
+}

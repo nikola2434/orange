@@ -1,0 +1,6 @@
+@import "../../../styles/main.module.scss";
+.heading {
+  @include get-text(34px);
+  font-weight: bold;
+  color: $green;
+}

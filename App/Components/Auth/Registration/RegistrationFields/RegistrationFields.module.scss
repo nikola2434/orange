@@ -1,0 +1,42 @@
+@import "../../../../../styles/main.module.scss";
+
+.fields {
+  min-width: 430px;
+  max-width: 500px;
+  margin-top: $height_navigation;
+  display: flex;
+  justify-content: center;
+  border-left: $green solid 2px;
+
+  .login {
+    margin-top: 10%;
+    width: 350px;
+    display: block;
+    .logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .container_heading {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+    .form {
+      .field {
+        margin-top: 50px;
+        margin-bottom: 10px;
+      }
+    }
+    .links {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 20px;
+      @include get-text(14px);
+      color: $green;
+    }
+  }
+}

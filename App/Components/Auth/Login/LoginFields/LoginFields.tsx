@@ -18,7 +18,7 @@ const LoginFields: FC = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isDirty },
     reset,
   } = useForm<IFormLogin>({ mode: "onChange" });
 
@@ -43,6 +43,7 @@ const LoginFields: FC = () => {
             <Field
               placeholder="Логин"
               error={errors.email}
+              
               {...register("email", {
                 required: "Вы должны ввести свой Email!",
                 pattern: {
@@ -57,6 +58,7 @@ const LoginFields: FC = () => {
               placeholder="Пароль"
               error={errors.password}
               type="password"
+              isDirty={isDirty}
               {...register("password", {
                 minLength: {
                   value: 6,

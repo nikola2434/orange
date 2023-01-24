@@ -1,0 +1,22 @@
+@import "../../../styles/main.module.scss";
+
+.warning {
+  padding-top: $height_navigation;
+  width: 100%;
+  height: 100vh;
+  background: url("../../../public/circle-scatter-haikei.png") center no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  .message {
+    display: flex;
+    align-items: center;
+
+    > span {
+      margin-left: 30px;
+      @include get-text(40px);
+      @include get-gradient();
+    }
+  }
+}

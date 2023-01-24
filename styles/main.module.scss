@@ -5,6 +5,13 @@
   font-size: $font-size;
 }
 
+@mixin get-gradient() {
+  background: linear-gradient(91.23deg, #ff8d00 33.93%, #fac600 82.04%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 $height_navigation: 50px;
 $yellow: #fac600;
 $orange: #ff8d00;

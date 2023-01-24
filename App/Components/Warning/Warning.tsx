@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { FC } from "react";
-import Heading from "../../UI/Heading/Heading";
 import lemon from "../../../public/lemon.png";
 import Meta from "../Meta/Meta";
 import style from "./Warning.module.scss";

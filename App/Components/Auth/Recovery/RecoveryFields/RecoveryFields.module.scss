@@ -1,0 +1,35 @@
+@import "../../../../../styles/main.module.scss";
+.container {
+  min-width: 430px;
+  max-width: 500px;
+  margin-top: $height_navigation;
+  display: flex;
+  justify-content: center;
+  border-left: $green solid 2px;
+  .recovery {
+    margin-top: 40%;
+    width: 350px;
+    display: block;
+    .logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .container_heading {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+    .form {
+      > span {
+        @include get-text(14px);
+        color: $green;
+      }
+      > button {
+        margin-top: 20px;
+      }
+    }
+  }
+}
